@@ -13,6 +13,30 @@ npm start
 
 
 
+## Create a terminal command
+File Name: start_whiteboard.sh
+```
+#!/bin/bash
+
+# Change directory to the project folder
+cd /Users/nicksmith/Desktop/Projects/Whiteboard/WhiteBoard
+
+# Run npm start
+npm start
+```
+
+```
+sudo mv /path/to/start_whiteboard.sh /usr/local/bin/whiteboard
+```
+
+```
+chmod +x /usr/local/bin/whiteboard
+```
+
+```
+whiteboard
+```
+
 Check out our [documentation](https://docs.excalidraw.com/docs/@excalidraw/excalidraw/installation) for more details!
 
 
