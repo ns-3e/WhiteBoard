@@ -19,13 +19,7 @@ const DefaultSidebarTrigger = withInternalFallback(
   ) => {
     const { DefaultSidebarTriggerTunnel } = useTunnels();
     return (
-      <DefaultSidebarTriggerTunnel.In>
-        <Sidebar.Trigger
-          {...props}
-          className="default-sidebar-trigger"
-          name={DEFAULT_SIDEBAR.name}
-        />
-      </DefaultSidebarTriggerTunnel.In>
+      <></>
     );
   },
 );
