@@ -64,6 +64,8 @@ import Scene from "../scene/Scene";
 import { LaserPointerButton } from "./LaserPointerButton";
 import { MagicSettings } from "./MagicSettings";
 import { TTDDialog } from "./TTDDialog/TTDDialog";
+import { nativeFileSystemSupported } from "../data/filesystem";
+
 
 interface LayerUIProps {
   actionManager: ActionManager;
@@ -354,6 +356,10 @@ const LayerUI = ({
                 <tunnels.DefaultSidebarTriggerTunnel.Out />
               )}
           </div>
+        </div>
+        <div className="">
+          {!nativeFileSystemSupported &&
+            actionManager.renderAction("changeProjectName")}
         </div>
       </FixedSideContainer>
     );
