@@ -33,7 +33,6 @@ export const actionChangeProjectName = register({
   },
   PanelComponent: ({ appState, updateData, appProps, data, app }) => (
     <ProjectName
-      label={t("labels.fileTitle")}
       value={app.getName()}
       onChange={(name: string) => updateData(name)}
       ignoreFocus={data?.ignoreFocus ?? false}

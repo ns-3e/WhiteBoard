@@ -10,7 +10,6 @@ import { KEYS } from "../keys";
 type Props = {
   value: string;
   onChange: (value: string) => void;
-  label: string;
   ignoreFocus?: boolean;
 };
 
@@ -41,7 +40,6 @@ export const ProjectName = (props: Props) => {
   return (
     <div className="ProjectName">
       <label className="ProjectName-label" htmlFor="filename">
-        {`${props.label}:`}
       </label>
       <input
         type="text"

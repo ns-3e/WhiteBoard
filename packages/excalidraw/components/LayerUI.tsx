@@ -355,12 +355,13 @@ const LayerUI = ({
                 appState.openSidebar?.name !== DEFAULT_SIDEBAR.name) && (
                 <tunnels.DefaultSidebarTriggerTunnel.Out />
               )}
+            <div className="">
+              {!nativeFileSystemSupported &&
+                actionManager.renderAction("changeProjectName")}
+            </div>
           </div>
         </div>
-        <div className="">
-          {!nativeFileSystemSupported &&
-            actionManager.renderAction("changeProjectName")}
-        </div>
+       
       </FixedSideContainer>
     );
   };
